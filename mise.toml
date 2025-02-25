@@ -1,0 +1,2 @@
+[hooks]
+postinstall = "mise run install"
