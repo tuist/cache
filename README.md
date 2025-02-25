@@ -27,3 +27,7 @@ swift build
 1. Clone the repository: `git clone git@github.com:tuist/cache.git`
 2. Install the dependencies: `mise install`.
 3. Dev the project: `mise run dev`
+
+## References
+
+- [usage](https://usage.jdx.dev/)
