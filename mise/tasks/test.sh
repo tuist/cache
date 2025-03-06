@@ -1,5 +1,5 @@
 #!/bin/bash
-#MISE description="Build the project using Swift Package Manager"
+#MISE description="Test the project using Swift Package Manager"
 #USAGE flag "-l --linux-vm" help="Build virtualizing Linux"
 
 set -eo pipefail
@@ -16,7 +16,7 @@ if [ "$usage_linux_vm" = "true" ]; then
             --workdir "/package" \
             swiftlang/swift:nightly-6.0-focal \
             /bin/bash -c \
-            "swift build --build-path ./.build/linux" --configuration release
+            "swift test --build-path ./.build/linux"
 else
-    swift build --configuration release
+    swift test
 fi
